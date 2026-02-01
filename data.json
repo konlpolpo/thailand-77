@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bangkok",
+    "province": "กรุงเทพมหานคร",
+    "title": "วัดพระแก้ว",
+    "image": "https://images.unsplash.com/photo-1510379872535-9310dc6fd6a7?q=80&w=1000",
+    "description": "วัดพระศรีรัตนศาสดาราม หรือวัดพระแก้ว เป็นวัดที่สำคัญที่สุดในประเทศไทย...",
+    "map_link": "https://maps.app.goo.gl/xxx",
+    "reference": "https://www.tourismthailand.org"
+  },
+  {
+    "id": "chiangmai",
+    "province": "เชียงใหม่",
+    "title": "ดอยอินทนนท์",
+    "image": "https://images.unsplash.com/photo-1585129819171-80d0339d6c38?q=80&w=1000",
+    "description": "ยอดเขาสูงที่สุดในประเทศไทย มีอากาศหนาวเย็นตลอดปี...",
+    "map_link": "https://maps.app.goo.gl/yyy",
+    "reference": "https://www.chiangmai.go.th"
+  }
+]

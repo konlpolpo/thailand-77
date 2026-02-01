@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสถานที่ท่องเที่ยว</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="detail-container">
+        <a href="index.html" class="back-btn">← กลับหน้าหลัก</a>
+        <div id="detailContent">
+            </div>
+    </div>
+
+    <script>
+        // โค้ดสำหรับดึง Parameter จาก URL ว่าผู้ใช้คลิกจังหวัดไหน
+        const urlParams = new URLSearchParams(window.location.search);
+        const provinceId = urlParams.get('id');
+
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                const item = data.find(p => p.id === provinceId);
+                if(item) {
+                    document.getElementById('detailContent').innerHTML = `
+                        <img src="${item.image}" class="detail-img">
+                        <h2>${item.province}</h2>
+                        <h3>${item.title}</h3>
+                        <p class="desc">${item.description}</p>
+                        <a href="${item.map_link}" target="_blank" class="map-btn">📍 ดูพิกัด Google Maps</a>
+                        <hr>
+                        <p class="ref">แหล่งอ้างอิง: <a href="${item.reference}">${item.reference}</a></p>
+                    `;
+                }
+            });
+    </script>
+</body>
+</html>
