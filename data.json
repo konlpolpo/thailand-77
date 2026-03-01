@@ -6,7 +6,7 @@
     "image": "https://images.unsplash.com/photo-1510379872535-9310dc6fd6a7?q=80&w=1000",
     "description": "วัดพระศรีรัตนศาสดาราม หรือวัดพระแก้ว เป็นวัดที่สำคัญที่สุดในประเทศไทย...",
     "map_link": "https://maps.app.goo.gl/xxx",
-    "reference": "https://www.tourismthailand.org"",
+    "reference": "https://www.tourismthailand.org",
   }
   {
     "id": "chiangmai",
@@ -19,6 +19,7 @@
   }
 
 ]
+
 
 
 
